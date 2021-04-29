@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sproutpay Safevest</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./sprout-logo-ii-e1609289843931.png" type="image/jpg">
+</head>
+<body>
+    
+    <header>
+        <img src="./sprout-logo-ii-e1609289843931.png" alt="sproutpay-logo">
+    </header>
+    <main>
+
+        <div class="section-one">
+            <h1>Sending money made easy.</h1>
+            <img src="./rafiki.png" alt="">
+        </div>
+
+        <div class="section-two">
+
+            <div class="the-form">
+                <!-- <form action=""> -->
+    
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" class="b-shadow lg-input">
+                    
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" class="b-shadow lg-input">
+                    
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" class="b-shadow lg-input">
+                    
+                    <label for="phone">Phone</label>
+                    <input type="number" id="phone" class="b-shadow lg-input">
+    
+                    <div class="pay-set">
+                        
+                    <div class="price-div">
+                        <label for="amount">Amount (USD)</label>
+                        <input type="number" id="amount" class="b-shadow sm-input">
+                    </div>
+                    
+                    <div class="currency-div">
+                        <label for="currency">Currency</label>
+                        <select name="currency" id="currency" class="currency b-shadow sm-input">
+                            <option value="NGN">NGN</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="KES">KES</option>
+                            <option value="GHS">GHS</option>
+                        </select>
+                    </div>
+    
+                    </div>
+    
+                    <div class="pay-amount">
+                        <button id="show-btn">Show</button> <span id="curr"></span> <span id="price"></span>
+                    </div>
+                    
+                    <!-- <form>
+                        <div class="submit-sec">
+                            <script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
+                            <a href="" id="send-link"><input type="submit" id="submit" onClick="payWithRave()" class="b-shadow sm-input"></a>
+                        </div>
+                    </form> -->
+
+                    <div class="submit-sec">
+                        <form>
+                            <script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
+                            <button type="button" onClick="payWithRave()" id="submit" class="b-shadow sm-input">Pay Now</button>
+                        </form>
+                    </div>
+    
+    
+                <!-- </form> -->
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="./app.js"></script>
+    <script src="./barter.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+body {padding: 0;
+      margin: 0;
+}
+
+header {padding: 50px 15% 0;
+}
+
+main {display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 90vh;
+}
+
+.section-one h1 {color: #724AC9;
+                 text-transform: uppercase;
+}
+.section-one img {margin-left: -80px;
+}
+
+.section-two {display: flex;
+              justify-content: center;
+              align-items: center;
+}
+
+.the-form {width: 330px;
+           height: 600px;
+           padding-top: 15px;
+           box-sizing: border-box;
+           box-shadow: -2px -2px 12px rgba(237, 237, 237, 0.1), 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+label {font-size: 12px;
+       margin: 0 0 5px 15px;
+}
+
+.the-form {display: flex;
+           flex-direction: column;
+}
+
+input, #currency, #submit {border: none;
+                           outline: none;
+                           border-radius: 5px;
+                           margin: 8px 0 20px 15px;
+                           padding: 5px;
+}
+
+.b-shadow {box-shadow: -2px -2px 12px rgba(217, 217, 217, 0.1), 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.lg-input {width: 250px;
+           height: 40px;
+} 
+.sm-input {width: 125px;
+           height: 35px;
+}
+
+#submit {background-color: #724AC9;
+         border-radius: 50px;
+         color: white;
+}
+
+.pay-set {display: flex;
+}
+
+.pay-amount {width: 100%;
+             background-color: #724AC9;
+             color: white;
+             padding: 10px;
+             text-align: center;
+             box-sizing: border-box;
+}
+
+.submit-sec {display: flex;
+             justify-content: center;
+             align-items: center;
+             margin-top: 10px;
+}
+
+#currency {height: 45px;
+}
+
+#show-btn {float: left;
+           background-color: #724ac985;
+           border: none;
+           color: white;
+           box-shadow: -2px -2px 12px rgba(237, 237, 237, 0.1), 2px 2px 12px rgba(58, 48, 59, 0.1);
+           outline: none;
+}
+
+@media (max-width: 779px) {
+       .section-one img {width: 350px;
+                         height: 250px;
+                         margin: auto;
+                         margin-left: -50px;
+       }
+       .section-one h1 {font-size: 24px;
+                        margin-left: 10px;
+       }
+}
+
+@media (max-width: 559px) {
+       main {flex-direction: column;
+       }
+       .section-one, .section-two {margin: 20px 0;
+       }
+       .section-one img {width: 300px;
+                         height: 200px;
+                         margin: auto;
+                         margin-top: 150px;
+       }
+       .section-one h1 {font-size: 18px;
+                        text-align: center;
+                        margin: auto;
+                        margin: 400px 0 -120px;
+       }
+}
